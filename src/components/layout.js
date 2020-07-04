@@ -51,7 +51,7 @@ const Layout = ({ children }) => {
         <div className="avatar--bg" />
         <div
           className="avatar"
-          style={{ background: 'url("avatar.jpg") no-repeat' }}
+          style={{ background: 'url("../images/avatar.jpg") no-repeat' }}
         >
           &nbsp;
         </div>
