@@ -6,6 +6,8 @@
         text="This project is my very first project as a student at 42. I will need to recode a few functions of the C standard library as well as some other utility functions that I will use during my whole cursus."
         imgSrc="c.png"
         imgAlt="C Programming Language"
+        button="GitHub"
+        url="https://github.com/xplore93/Libft"
       />
       <card title="Titulo" text="Texto" imgSrc="cpp.png" imgAlt="alt" />
       <card title="Titulo" text="Texto" imgSrc="docker.png" imgAlt="alt" />

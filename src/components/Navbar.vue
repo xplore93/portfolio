@@ -1,7 +1,7 @@
 <template>
   <div>
     <b-navbar toggleable="sm" type="dark" variant="dark">
-      <b-navbar-brand>👨🏻‍💻</b-navbar-brand>
+      <b-navbar-brand @mouseover="changeIcon">{{ icon[i] }}</b-navbar-brand>
 
       <b-navbar-toggle target="navbar-toggle-collapse"></b-navbar-toggle>
 
@@ -19,7 +19,33 @@
 <script>
 export default {
   name: "Navbar",
+  data: () => ({
+    icon: {
+      0: "🧑‍💻",
+      1: "🧑🏼‍💻",
+      2: "🧑🏻‍💻",
+      3: "🧑🏽‍💻",
+      4: "🧑🏾‍💻",
+      5: "🧑🏿‍💻",
+      6: "👩🏿‍💻",
+      7: "👩🏾‍💻",
+      8: "👩🏽‍💻",
+      9: "👩🏻‍💻",
+      10: "👩🏼‍💻",
+      11: "👩‍💻",
+      12: "👨‍💻",
+      13: "👨🏼‍💻",
+      14: "👨🏻‍💻",
+      15: "👨🏽‍💻",
+      16: "👨🏾‍💻",
+      17: "👨🏿‍💻",
+    },
+    i: 0,
+  }),
   methods: {
+    changeIcon() {
+      this.i = (this.i + 1) % 18;
+    },
     goHome() {
       this.$router.push("/").catch(() => {});
     },
