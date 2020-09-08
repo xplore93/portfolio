@@ -7,8 +7,8 @@
 
       <b-collapse id="navbar-toggle-collapse" is-nav>
         <b-navbar-nav>
-          <router-link to="/" class="nav-item">Inicio</router-link>
-          <router-link to="/projects" class="nav-item">Proyectos</router-link>
+          <b-nav-item @click="goHome">Inicio</b-nav-item>
+          <b-nav-item @click="goProjects">Proyectos</b-nav-item>
           <b-nav-item href="mailto:eugen.stina@gmail.com">Contacto</b-nav-item>
         </b-navbar-nav>
       </b-collapse>
@@ -19,6 +19,14 @@
 <script>
 export default {
   name: "Navbar",
+  methods: {
+    goHome() {
+      this.$router.push("/").catch(() => {});
+    },
+    goProjects() {
+      this.$router.push("projects").catch(() => {});
+    },
+  },
 };
 </script>
 
