@@ -7,8 +7,8 @@
 
       <b-collapse id="navbar-toggle-collapse" is-nav>
         <b-navbar-nav>
-          <router-link to="/"><b-nav-item>Inicio</b-nav-item></router-link>
-          <router-link to="/projects"><b-nav-item>Proyectos</b-nav-item></router-link>
+          <router-link to="/" class="nav-item">Inicio</router-link>
+          <router-link to="/projects" class="nav-item">Proyectos</router-link>
           <b-nav-item href="mailto:eugen.stina@gmail.com">Contacto</b-nav-item>
         </b-navbar-nav>
       </b-collapse>
