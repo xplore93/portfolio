@@ -1,9 +1,9 @@
 <template>
-	<CardGroup />
+  <CardGroup :color="$parent.navColor[$parent.j]" />
 </template>
 
 <script>
-import CardGroup from "../components/CardGroup.vue";
+import CardGroup from "../components/CardGroup";
 
 export default {
   name: "Projects",
