@@ -1,8 +1,19 @@
 <template>
-  <section class="skills-section section py-5">
+  <section class="py-5">
     <div class="container">
       <h3 class="font-weight-bold text-center mb-3">Resumen de habilidades</h3>
-      <div class="mx-auto text-center mb-5 text-secondary">Text</div>
+      <div class="section-intro mx-auto text-center mb-5 text-secondary">
+        Tengo más de 1 año de experiencia en la creación de aplicaciones web.
+        A continuación se muestra una descripción general rápida de mis principales
+        habilidades técnicas y herramientas que utilizo.
+        ¿Quieres saber más sobre mi experiencia? Mira mi
+        <a
+          href
+          @click="$router.push('resume').catch(() => {})"
+        >
+          <b>currículum</b>
+        </a>.
+      </div>
       <div class="mx-auto pt-5">
         <div class="row">
           <SkillCard
@@ -40,4 +51,10 @@ export default {
 </script>
 
 <style scoped>
+a {
+  color: #434e5e;
+}
+.section-intro {
+  max-width: 780px;
+}
 </style>

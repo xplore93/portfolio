@@ -12,13 +12,13 @@
       <div class="lead">Hola, me llamo</div>
       <h2 class="mt-0 display-4 font-weight-bold">Eugeniu Stina</h2>
       <div class="mb-3">
-        Soy desarrollador de software y web.
-        Los frameworks que más he usado en el desarrollo web son VueJS, React, NodeJS y Laravel.
-        Para una plataforma entera he gestionado toda la base de datos en MySQL.
-        Tengo además experiencia en C/C++, Python, Java y DevOps.
+        Soy un desarrollador full-stack especializado en desarrollo frontend
+        y backend para aplicaciones web complejas y escalables.
         <br />
-        <br />Apasionado en la evolución tecnológica y desarrollo de aplicaciónes innovadoras y progresivas.
-        Me fascina la Inteligencia Artificial, Realidad Virtual/Aumentada y el potencial que tienen en el futuro del desarrollo.
+        <br />
+        Sigo constantemente el mercado de tecnologías y herramientas de trabajo
+        para estar siempre al tanto de los cambios que se están produciendo
+        en el campo de la programación Web.
       </div>
     </div>
   </div>

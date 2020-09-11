@@ -45,7 +45,7 @@ export default {
   },
   props: {
     color: Object,
-  }
+  },
 };
 </script>
 
