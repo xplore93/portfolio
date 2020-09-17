@@ -1,5 +1,4 @@
 import Home from "@/views/Home";
-import Projects from "@/views/Projects";
 import Router from "vue-router";
 import Vue from "vue";
 
@@ -15,7 +14,7 @@ export default new Router({
     {
       name: "projects",
       path: "/projects",
-      component: Projects,
+      component: () => import(/* webpackChunkName: "foo" */ "@/views/Projects")
     },
   ],
   linkActiveClass: "active",
