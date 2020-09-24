@@ -1,109 +1,80 @@
 <template>
-<div class="wrapper">
-    <b-navbar toggleable="sm" type="dark" :style="{backgroundColor: this.$parent.navColor[$parent.j][0]}">
-        <b-navbar-brand @mouseover="changeIcon" @click="changeColor" id="ico" title="Estoy trabajando, si quieres cambiar los colores, haz click sobre mi =)">{{ icon[$parent.i] }}</b-navbar-brand>
-        <b-navbar-brand href="https://twitter.com/Eugeniu_93" id="social">
-            <b-img-lazy :src="require('@/assets/social/twitter.svg')" id="icon"></b-img-lazy>
-        </b-navbar-brand>
-        <b-navbar-brand href="https://www.linkedin.com/in/estina/" id="social">
-            <b-img-lazy :src="require('@/assets/social/linkedin.svg')" id="icon"></b-img-lazy>
-        </b-navbar-brand>
-        <b-navbar-brand href="https://github.com/xplore93" id="social">
-            <b-img-lazy :src="require('@/assets/social/github.svg')" id="icon"></b-img-lazy>
-        </b-navbar-brand>
-        <b-navbar-toggle target="navbar-toggle-collapse"></b-navbar-toggle>
-        <b-collapse id="navbar-toggle-collapse" is-nav>
-            <b-navbar-nav class="ml-auto">
-                <b-nav-item>
-                    <router-link to="/">Inicio</router-link>
-                </b-nav-item>
-                <b-nav-item>
-                    <router-link to="/projects">Proyectos</router-link>
-                </b-nav-item>
-                <b-nav-item>
-                    <router-link to="/resume">Resume</router-link>
-                </b-nav-item>
-                <b-nav-item>
-                    <router-link to="/contact">Contacto</router-link>
-                </b-nav-item>
-            </b-navbar-nav>
-        </b-collapse>
-    </b-navbar>
-</div>
+<nav class="navbar navbar-dark navbar-expand-md sticky-top px-3" :style="{ background: accentColor[0] }">
+    <div :style="{ color: accentColor[0] }" class="logo pr-3" width="64">
+        <svg height="32" viewBox="0 0 320 100" @click="changeAccentColor()">
+            <g transform="matrix(3.125,0,0,3.125,7.450580596923828e-7,0)" :style="{ fill: accentColor[1] }">
+                <path d="M16,0C11.905,0,7.81,1.562,4.686,4.686c-6.248,6.248-6.248,16.379,0,22.627C7.81,30.438,11.905,32,16,32   c4.095,0,8.19-1.562,11.314-4.686c6.248-6.248,6.248-16.379,0-22.627C24.19,1.562,20.095,0,16,0z M26.607,26.607   C23.773,29.44,20.007,31,16,31s-7.773-1.56-10.607-4.393c-5.849-5.849-5.849-15.365,0-21.213C8.227,2.56,11.993,1,16,1   s7.773,1.56,10.607,4.393C32.455,11.242,32.455,20.758,26.607,26.607z"></path>
+                <rect x="6.298" y="10.905" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -4.681 11.5091)" width="10.508" height="1"></rect>
+                <rect x="5.469" y="13.046" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -5.4781 13.8675)" width="17.063" height="1"></rect>
+                <rect x="4.346" y="15.637" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -6.7239 16.04)" width="23.307" height="1"></rect>
+                <rect x="10.126" y="17.936" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -7.6786 18.3333)" width="16.33" height="1"></rect>
+                <rect x="15.3" y="20.292" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -8.6902 20.603)" width="10.451" height="1"></rect>
+            </g>
+            <g transform="matrix(2.656631601840095,0,0,2.656631601840095,115.3301726986877,13.507411122922012)" fill="#ffffff">
+                <path d="M1.7578 4.941000000000001 l8.3008 0 l0 1.4258 l-6.8555 0 l0 4.5313 l4.1797 0 l0 1.4063 l-4.1797 0 l0 5.6836 l6.7969 0 l0 1.4355 l-8.2422 0 l0 -14.482 z M12.509809375 8.477 l1.3867 0 l0 5 q0 1.8359375 0.1953125 2.51953125 q0.29296875 0.986328125 1.123046875 1.557617188 t1.9922 0.57129 q1.15234375 0 1.953125 -0.556640625 t1.1035 -1.4648 q0.21484375 -0.615234375 0.21484375 -2.626953125 l0 -5 l1.4063 0 l0 5.2637 q0 2.216796875 -0.5224609375 3.334960938 t-1.5576 1.748 t-2.5977 0.62988 q-1.572265625 0 -2.6171875 -0.6298828125 t-1.5625 -1.7676 t-0.51758 -3.4229 l0 -5.1563 z M35.546437499999996 17.0117 q0 2.255859375 -0.400390625 3.30078125 q-0.537109375 1.474609375 -1.879882813 2.270507813 t-3.2178 0.7959 q-1.38671875 0 -2.48046875 -0.390625 t-1.7871 -1.0449 t-1.2695 -1.9141 l1.4941 0 q0.615234375 1.064453125 1.577148438 1.572265625 t2.3975 0.50781 q1.40625 0 2.377929688 -0.52734375 t1.3818 -1.3184 t0.41016 -2.5684 l0 -0.54688 q-0.771484375 0.986328125 -1.899414063 1.513671875 t-2.3779 0.52734 q-1.474609375 0 -2.778320313 -0.732421875 t-2.0117 -1.9775 t-0.70801 -2.7295 t0.7373 -2.7686 t2.0459 -2.0313 t2.7441 -0.74707 q1.2109375 0 2.197265625 0.37109375 q0.830078125 0.302734375 1.962890625 1.162109375 q0.95703125 0.791015625 1.50390625 3.017578125 q-0.01953125 0.29296875 -0.01953125 4.2578125 z M30.0781375 9.531 q-1.171875 0 -2.172851563 0.56640625 t-1.5723 1.5625 t-0.57129 2.1582 q0 1.767578125 1.181640625 2.919921875 t3.0566 1.1523 q1.9140625 0 3.06640625 -1.142578125 t1.1523 -3.0078 q0 -1.2109375 -0.5322265625 -2.158203125 t-1.5039 -1.499 t-2.1045 -0.55176 z M47.490359375 15.6348 l1.1523 0.61523 q-0.556640625 1.123046875 -1.30859375 1.806640625 t-1.6895 1.04 t-2.1191 0.35645 q-2.6171875 0 -4.091796875 -1.713867188 t-1.4746 -3.8721 q0 -2.041015625 1.25 -3.6328125 q1.58203125 -2.03125 4.248046875 -2.03125 q2.724609375 0 4.365234375 2.080078125 q1.162109375 1.46484375 1.171875 3.65234375 l-9.6191 0 q0.0390625 1.875 1.19140625 3.071289063 t2.8418 1.1963 q0.8203125 0 1.591796875 -0.2880859375 t1.3135 -0.75684 t1.1768 -1.5234 z M47.490359375 12.7539 q-0.2734375 -1.103515625 -0.80078125 -1.762695313 t-1.3965 -1.0645 t-1.8262 -0.40527 q-1.572265625 0 -2.705078125 1.015625 q-0.8203125 0.7421875 -1.240234375 2.216796875 l7.9688 0 z M51.552696875 15.3809 l-0.019531 -1.1426 q-0.029296875 -0.83984375 0.068359375 -1.42578125 q0.21484375 -1.845703125 0.9375 -2.705078125 q0.703125 -0.751953125 1.435546875 -1.162109375 q1.2109375 -0.517578125 2.763671875 -0.48828125 q1.2109375 0 2.241210938 0.6103515625 t1.4697 1.6406 t0.43945 3.2275 l0 5.5078 l-1.3672 0 l0 -5.1074 q0 -1.85546875 -0.15625 -2.48046875 q-0.244140625 -1.064453125 -0.966796875 -1.508789063 t-2.1387 -0.44434 q-1.25 0 -2.2265625 0.72265625 t-0.9082 1.9727 q-0.185546875 0.80078125 -0.185546875 2.919921875 l0 3.9258 l-1.3867 0 l0 -4.0625 z M64.306621875 4.3260000000000005 q0.46875 0 0.8056640625 0.33203125 t0.33691 0.80078 t-0.33691 0.80566 t-0.80566 0.33691 t-0.80078 -0.33691 t-0.33203 -0.80566 t0.33203 -0.80078 t0.80078 -0.33203 z M63.623021875 8.73 l1.377 0 l0 10.713 l-1.377 0 l0 -10.713 z M67.666059375 8.477 l1.3867 0 l0 5 q0 1.8359375 0.1953125 2.51953125 q0.29296875 0.986328125 1.123046875 1.557617188 t1.9922 0.57129 q1.15234375 0 1.953125 -0.556640625 t1.1035 -1.4648 q0.21484375 -0.615234375 0.21484375 -2.626953125 l0 -5 l1.4063 0 l0 5.2637 q0 2.216796875 -0.5224609375 3.334960938 t-1.5576 1.748 t-2.5977 0.62988 q-1.572265625 0 -2.6171875 -0.6298828125 t-1.5625 -1.7676 t-0.51758 -3.4229 l0 -5.1563 z"></path>
+            </g>
+        </svg>
+    </div>
+    <div class="navbar-collapse w-auto">
+        <a class="navbar-brand" href="https://twitter.com/Eugeniu_93">
+            <i class="fab fa-twitter"></i>
+        </a>
+        <a class="navbar-brand" href="https://www.linkedin.com/in/estina/">
+            <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a class="navbar-brand" href="https://github.com/xplore93">
+            <i class="fab fa-github-alt"></i>
+        </a>
+    </div>
+    <button class="navbar-toggler" data-toggle="collapse" data-target="#navbar-toggle-collapse">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbar-toggle-collapse">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <router-link class="nav-link" to="/">Inicio</router-link>
+            </li>
+            <li class="nav-item">
+                <router-link class="nav-link" to="/projects">Proyectos</router-link>
+            </li>
+            <li class="nav-item">
+                <router-link class="nav-link" to="/resume">Resume</router-link>
+            </li>
+            <li class="nav-item">
+                <router-link class="nav-link" to="/contact">Contacto</router-link>
+            </li>
+        </ul>
+    </div>
+</nav>
 </template>
 
 <script>
+import {
+    mapState,
+    mapActions
+} from "vuex";
+
 export default {
-    name: "Navbar",
-    data: () => ({
-        icon: {
-            0: "🧑‍💻",
-            1: "🧑🏼‍💻",
-            2: "🧑🏻‍💻",
-            3: "🧑🏽‍💻",
-            4: "🧑🏾‍💻",
-            5: "🧑🏿‍💻",
-            6: "👩🏿‍💻",
-            7: "👩🏾‍💻",
-            8: "👩🏽‍💻",
-            9: "👩🏻‍💻",
-            10: "👩🏼‍💻",
-            11: "👩‍💻",
-            12: "👨‍💻",
-            13: "👨🏼‍💻",
-            14: "👨🏻‍💻",
-            15: "👨🏽‍💻",
-            16: "👨🏾‍💻",
-            17: "👨🏿‍💻",
-        },
-    }),
-    methods: {
-        changeIcon() {
-            this.$parent.i = (this.$parent.i + 1) % 18;
-        },
-        changeColor() {
-            this.$parent.j = (this.$parent.j + 1) % 3;
-        },
-    },
+    computed: mapState(["accentColor"]),
+    methods: mapActions(["changeAccentColor"])
 };
 </script>
 
-<style scoped>
-a {
-    color: #ffffff80;
-    text-decoration: none !important;
+<style lang="scss" scoped>
+.nav-link.router-link-exact-active,
+.nav-link.router-link-exact-active:hover {
+    color: white;
 }
 
-a:not(.router-link-exact-active):hover {
-    color: #ffffffd0;
-}
-
-.router-link-exact-active {
-    color: #ffffff;
-}
-
-.wrapper {
-    z-index: 128;
-    position: sticky;
-    position: -webkit-sticky;
-    top: 0;
-}
-
-#icon {
-    height: 0.875em;
-}
-
-#social {
-    width: 36px;
-    height: 36px;
-    padding-top: 2px;
+.navbar-brand {
+    width: 40px;
     text-align: center;
     border-radius: 30%;
     -webkit-transition: 0.2s;
     transition: 0.2s;
 }
 
-#social:hover {
+.navbar-brand:hover {
     background: rgba(0, 0, 0, 0.2);
 }
 </style>

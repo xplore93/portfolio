@@ -1,48 +1,53 @@
 <template>
-  <div>
-    <Navbar />
-    <Header :type="$route.name" :style="{backgroundColor: this.navColor[j][1]}" />
-    <router-view></router-view>
-  </div>
+<Navbar />
+<Header />
+<transition name="route" mode="out-in">
+    <router-view />
+</transition>
 </template>
 
 <script>
-import Navbar from "./components/Navbar";
-import Header from "./components/Header/Header";
+import Navbar from "@/components/Navbar";
+import Header from "@/components/Header";
 
 export default {
-  name: "App",
-  components: {
-    Navbar,
-    Header,
-  },
-  data: () => ({
-    navColor: {
-      0: {
-        0: "#2e4049",
-        1: "#567787",
-      },
-      1: {
-        0: "#23624b",
-        1: "#3dae84",
-      },
-      2: {
-        0: "#5d3045",
-        1: "#A05377",
-      },
-    },
-    i: 0,
-    j: 0,
-  }),
+    components: {
+        Navbar,
+        Header
+    }
 };
 </script>
 
 <style>
 body {
-  font-family: "Roboto", sans-serif !important;
-  background: #f7f8fa !important;
-  -webkit-font-smoothing: antialiased !important;
-  -moz-osx-font-smoothing: grayscale !important;
-  color: #434e5e !important;
+    font-family: "Roboto", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background: #f7f8fa;
+    color: #434e5e;
+}
+
+@media only screen and (min-width : 1200px) {
+
+    .container {
+        width: 1140px;
+    }
+}
+
+.route-enter-from,
+.route-leave-to {
+    opacity: 0;
+    transform: translateY(-30px);
+}
+
+.route-enter-active,
+.route-leave-active {
+    transition: all .3s ease;
+}
+
+.route-enter-to,
+.route-leave-from {
+    opacity: 1;
+    transform: translateY(0);
 }
 </style>

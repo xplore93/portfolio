@@ -1,9 +1,9 @@
 <template>
-<div class="profile-teaser media flex-column flex-md-row hover">
+<div class="container d-flex flex-md-row flex-column">
     <figure class="mb-3 mb-md-0 mr-md-5 ml-md-0 mx-auto">
-        <img src="@/assets/avatar.png" title="Hola, me llamo Eugeniu Stina" class="avatar" />
+        <img src="@/assets/avatar.png" title="Hola, me llamo Eugeniu Stina" class="avatar" loading="lazy" />
     </figure>
-    <div class="media-body text-center text-md-left">
+    <div class="text-md-left text-center">
         <div class="lead">Hola, me llamo</div>
         <h2 class="mt-0 display-4 font-weight-bold">Eugeniu Stina</h2>
         <div class="mb-3">
@@ -19,22 +19,15 @@
 </div>
 </template>
 
-<script>
-export default {
-    name: "Home",
-};
-</script>
-
-<style>
-/* Zoom Out */
-.hover figure img {
+<style scoped>
+.avatar {
     height: 245px;
     width: 245px;
     -webkit-transition: .3s;
     transition: .3s;
 }
 
-.hover figure:hover img {
+.avatar:hover {
     -webkit-transform: scale(0.98);
     transform: scale(0.98);
 }
