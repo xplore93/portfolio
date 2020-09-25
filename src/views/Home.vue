@@ -9,12 +9,10 @@
             ¿Quieres saber más sobre mi experiencia? Mira mi
             <router-link to="/resume"><b>currículum</b></router-link>.
         </div>
-        <div class="mx-auto pt-5">
-            <div class="row">
-                <SkillCard title="Frontend" imgSrc="frontend-icon.svg" :rows="['React/VueJS', 'Javascript', 'Node.js', 'HTML/CSS/SASS']" />
-                <SkillCard title="Backend" imgSrc="backend-icon.svg" :rows="['Python/Django', 'Ruby/Rails', 'PHP/Laravel', 'PostgresSQL/MySQL']" />
-                <SkillCard title="Otros" imgSrc="other-skills-icon.svg" :rows="['DevOps', 'Unit Testing', 'UX/Wireframing', 'Wordpress/Shopify']" />
-            </div>
+        <div class="row mx-auto pt-5">
+            <SkillCard title="Frontend" imgSrc="frontend-icon.svg" :rows="['React/VueJS', 'Javascript', 'Node.js', 'HTML/CSS/SASS']" />
+            <SkillCard title="Backend" imgSrc="backend-icon.svg" :rows="['Python/Django', 'Ruby/Rails', 'PHP/Laravel', 'PostgresSQL/MySQL']" />
+            <SkillCard title="Otros" imgSrc="other-skills-icon.svg" :rows="['DevOps', 'Unit Testing', 'UX/Wireframing', 'Wordpress/Shopify']" />
         </div>
     </div>
 </section>

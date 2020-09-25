@@ -1,5 +1,5 @@
 <template>
-<div class="col-sm-6 col-lg-6 p-5">
+<div class="col-sm-6 col-lg-6 p-2 p-lg-4">
     <div class="wrapper">
         <div id="background" :style="{background: 'url('+require('@/assets/dev/'+img)+') center / cover no-repeat'}"></div>
         <div class="data">
@@ -62,12 +62,12 @@ h1 {
 }
 
 .data {
-    transform: translateY(12.2em);
+    transform: translateY(16em);
     transition: transform 0.3s;
 }
 
 .data .content {
-    padding: 4.5em;
+    padding: 1em;
     position: relative;
 }
 

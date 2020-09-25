@@ -19,8 +19,8 @@
             <div class="col-md-4 col-sm-6 col-xs-12">
                 <ul class="social-icons">
                     <li><a class="twitter" href="https://twitter.com/Eugeniu_93"><i class="fa fa-twitter"></i></a></li>
-                    <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
-                    <li><a class="dribbble" href="#"><i class="fa fa-github"></i></a></li>
+                    <li><a class="linkedin" href="https://www.linkedin.com/in/estina/"><i class="fa fa-linkedin"></i></a></li>
+                    <li><a class="dribbble" href="https://github.com/xplore93"><i class="fa fa-github"></i></a></li>
                 </ul>
             </div>
         </div>
