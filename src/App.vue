@@ -4,16 +4,19 @@
 <transition name="route" mode="out-in">
     <router-view />
 </transition>
+<Footer />
 </template>
 
 <script>
 import Navbar from "@/components/Navbar";
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 export default {
     components: {
         Navbar,
-        Header
+        Header,
+        Footer
     }
 };
 </script>

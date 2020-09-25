@@ -17,13 +17,13 @@
     </div>
     <div class="navbar-collapse w-auto">
         <a class="navbar-brand" href="https://twitter.com/Eugeniu_93">
-            <i class="fab fa-twitter"></i>
+            <i class="fa fa-twitter"></i>
         </a>
         <a class="navbar-brand" href="https://www.linkedin.com/in/estina/">
-            <i class="fab fa-linkedin-in"></i>
+            <i class="fa fa-linkedin"></i>
         </a>
         <a class="navbar-brand" href="https://github.com/xplore93">
-            <i class="fab fa-github-alt"></i>
+            <i class="fa fa-github"></i>
         </a>
     </div>
     <button class="navbar-toggler" data-toggle="collapse" data-target="#navbar-toggle-collapse">
