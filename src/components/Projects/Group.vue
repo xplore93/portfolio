@@ -58,7 +58,7 @@ h1 {
 
 .wrapper:hover .data {
     border-radius: 1%;
-    transform: translateY(0);
+    transform: translateY(10em);
 }
 
 .data {
