@@ -1,7 +1,7 @@
 <template>
 <p>Work in progress</p>
 <div class="container">
-    <form id="contact" action="https://formspree.io/xdopoqbr" method="POST">
+    <form id="contact" action="https://formspree.io/xdopoqbr" method="POST" target="_blank">
         <h3>Contacta conmigo</h3>
         <h4>Si tiene alguna pregunta o quiere hacerme una oferta, esta es el lugar para hacerlo.</h4>
         <fieldset>
