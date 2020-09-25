@@ -1,5 +1,5 @@
 <template>
-<div class="col-sm-6 col-lg-6 float-left p-5">
+<div class="col-sm-6 col-lg-6 p-5">
     <div class="wrapper">
         <div id="background" :style="{background: 'url('+require('@/assets/dev/'+img)+') center / cover no-repeat'}"></div>
         <div class="data">

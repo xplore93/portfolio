@@ -1,5 +1,5 @@
 <template>
-<div class="p-5">
+<div class="row m-0">
     <Group title="Proyectos de 42Madrid" text="Los Proyectos que he realizado durante el curso en 42Madrid" url="/" img="42.png" />
     <Group title="Proyectos personales" text="Los Proyectos que he realizado individualmente o en equipo" url="/" img="self.jpeg" />
 </div>
